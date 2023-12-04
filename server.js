@@ -7,11 +7,15 @@ const path = require('path');
 const app = express();
 const PORT = 3001;
 
-// Middleware pointing to the public folder
+
+// Serve images, css files, js files from the public directory
+// Allows us to reference files with their relative path
 app.use(express.static('public'));
+app.use(express.json());
+
 
 // Create express routes for default '/', '*' and '/notes' endpoints
-// app.get('/', (req, res) => res.send('Navigate to * or /notes'));
+app.get('/', (req, res) => res.send('Navigate to * or /notes'));
      
 app.get('*', (req, res) =>
     res.sendFile(path.join(__dirname, 'public/index.html'))

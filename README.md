@@ -10,7 +10,7 @@
 - [Contributing](#contributing)
 - [Screenshots](#screenshots)
 - [Resources](#resources)
-- [Questions](#questions)
+- [Contact](#contact)
 - [License](#licence)
 
 
@@ -28,16 +28,15 @@ To use this application, the user will:
 ## Contributing
 To get involved, reference the [Contributing Guide](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) to contribute to this project. 
 
-## Screenshots
-- 
+## Screenshots and Deployed Link 
+- Both coming soon
 
 ## Resources
 - Starter [Code](https://github.com/coding-boot-camp/miniature-eureka)
 
-## Questions
+## Contact 
 For additional questions and support, contact:
-- GitHub username: tugwellchristi
-- GitHub link: https://github.com/tugwellchristi
+- GitHub username: [tugwellchristi](https://github.com/tugwellchristi)
 - Email address: tugwellchristi@gmail.com
 
 ## License 
