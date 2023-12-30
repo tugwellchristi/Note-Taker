@@ -1,7 +1,7 @@
 //Import express and node package "path"
 const express = require('express');
-const fs = require('fs');
 const path = require('path');
+const notes = require('./db/notes.json');
 
 // Identify the port of use and initialize the app express use
 const app = express();

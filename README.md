@@ -1,8 +1,8 @@
 # Note Taker Application
-  MIT license
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Project Description
- This project is a simple tool that will allow users to write, save, and delete notes to an easy to navigate web interface. 
+ This project is a simple tool that will allow users to write, save, and delete notes on an easy to navigate web interface. 
 
 ## Table of Contents
 - [Installation](#installation)
