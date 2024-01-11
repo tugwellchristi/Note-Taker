@@ -4,6 +4,7 @@ let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
+let clearBtn;
 
 if (window.location.pathname === '/notes') {
   noteForm = document.querySelector('.note-form');
@@ -129,11 +130,10 @@ const handleRenderBtns = () => {
 
 // Render the list of note titles
 const renderNoteList = async (notes) => {
+  try {
   let jsonNotes = await notes.json();
-  if (window.location.pathname === '/notes') {
-    noteList.forEach((el) => (el.innerHTML = ''));
-  }
-
+  noteList.forEach((el) => (el.innerHTML = ''));
+  
   let noteListItems = [];
 
   // Returns HTML element with or without a delete button
@@ -176,9 +176,10 @@ const renderNoteList = async (notes) => {
     noteListItems.push(li);
   });
 
-  if (window.location.pathname === '/notes') {
     noteListItems.forEach((note) => noteList[0].append(note));
-  }
+} catch (error) {
+  console.error('Error rendering notes:', error);
+}
 };
 
 // Gets notes from the db and renders them to the sidebar

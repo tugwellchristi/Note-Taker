@@ -1,7 +1,11 @@
-const notes = require('express').Router();
+const express = require('express');
+const path = require('path');
+const fs = require('fs');
 
+const notes = express.Router();
+const dbFilePath = path.join(__dirname, 'db', 'db.json');
 
-
+// Get notes route
 notes.get('/api/notes', (req, res) => {
     try {
         const notes = JSON.parse(fs.readFileSync(dbFilePath, 'utf-8'));
