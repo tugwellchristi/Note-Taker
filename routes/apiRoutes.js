@@ -13,7 +13,7 @@ router.get('/notes', (req, res) => {
 
 router.post('/notes', (req, res) => {
     store
-        .addNotes(req.body)
+        .addNote(req.body)
         .then((notes) => {
             return res.json(notes);
         })
