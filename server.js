@@ -12,13 +12,16 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve images, css files, js files from the public directory
 // Allows us to reference files with their relative path
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 // Path to db.json file
 const dbFilePath = path.join(__dirname, 'db', 'db.json');
 
-const routes = require('./routes');
-app.use('/api', routes);
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
+
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 // Create express routes for default '/', '*' and '/notes' endpoints
 app.get('/', (req, res) =>

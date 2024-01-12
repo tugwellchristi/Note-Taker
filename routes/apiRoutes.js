@@ -9,8 +9,8 @@ router.get('/notes', (req, res) => {
         })
         .catch((error) =>
             res.status(500).json(error));
-
 });
+
 router.post('/notes', (req, res) => {
     store
         .addNotes(req.body)
@@ -19,7 +19,6 @@ router.post('/notes', (req, res) => {
         })
         .catch((error) =>
             res.status(500).json(error));
-
 });
 
 module.exports = router;
