@@ -29,7 +29,9 @@ To use this application, the user will:
 To get involved, reference the [Contributing Guide](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) to contribute to this project. 
 
 ## Screenshots and Deployed Link 
-- Both coming soon
+- Deployed Heroku [link](https://v2-notes-application-e1495e7ac2dc.herokuapp.com/)
+
+![Heroku-page](https://github.com/tugwellchristi/Note-Taker/assets/90078824/4e2a6af9-d083-4259-b4be-5ffdfe498075)
 
 ## Resources
 - Starter [Code](https://github.com/coding-boot-camp/miniature-eureka)
