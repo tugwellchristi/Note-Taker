@@ -1,1 +1,27 @@
-[{"title":"New Note","text":"New note content","id":"e5196230-b19a-11ee-bf96-8de9f8c3b8c8"}]
+[
+    {
+        "title":"5",
+        "text":"5",
+        "id":"7b45e2b0-b3ee-11ee-b377-c304b8962dc2"
+    },
+{
+    "title":"6",
+    "text":"6",
+    "id":"89f478c0-b3ef-11ee-a789-9be684e98ece"
+},
+{
+    "title":"Test",
+    "text":"test",
+    "id":"928995b0-b3ef-11ee-a789-9be684e98ece"
+},
+{
+    "title":"Test 2",
+    "text":"test 2\n",
+    "id":"a672d870-b403-11ee-8042-13abce0045de"
+},
+{
+    "title":"Test 3",
+    "text":"Test 3\n",
+    "id":"c8557790-b403-11ee-8fc5-8bd69e362725"
+}
+]

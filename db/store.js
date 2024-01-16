@@ -6,17 +6,7 @@ const writeFileSync = util.promisify(fs.writeFile);
 
 class Store {
     read() {
-        return readFileSync('db/db.json', 'utf-8').then((notes) => {
-            let parsedNotes;
-
-            try {
-                parsedNotes = [].concat(JSON.parse(notes));
-            } catch (error) {
-                parsedNotes = [];
-            }
-
-            return parsedNotes;
-        });
+        return readFileSync('db/db.json', 'utf-8')
     }
 
     write(notes) {
@@ -26,13 +16,11 @@ class Store {
     getNotes() {
         return this.read().then((notes) => {
             let parsedNotes;
-
             try {
                 parsedNotes = [].concat(JSON.parse(notes));
             } catch (error) {
                 parsedNotes = [];
             }
-
             return parsedNotes;
         });
     }

@@ -15,6 +15,7 @@ router.post('/notes', (req, res) => {
     store
         .addNote(req.body)
         .then((notes) => {
+            console.log(notes);
             return res.json(notes);
         })
         .catch((error) =>
